@@ -1,14 +1,14 @@
 export function Create() {
   return (
-    <form className="space-y-8 divide-y divide-gray-200">
-      <div className="space-y-8 divide-y divide-gray-200">
+    <form className="space-y-8 divide-y divide-gray-200 max-w-3xl mx-auto py-10 px-4 sm:px-6 lg:py-12 lg:px-8">
+      <div className="space-y-8 divide-y divide-gray-200 ">
         <div className="pt-8">
           <div>
             <h3 className="text-lg leading-6 font-medium text-gray-900">
-              Project Information
+              Exposure Information
             </h3>
             <p className="mt-1 text-sm text-gray-500">
-              Describe your project and add metadata for your photo shootings.
+              Add some metadata to your exposure.
             </p>
           </div>
           <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
