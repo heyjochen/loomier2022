@@ -1,22 +1,21 @@
 const express = require('express');
 
-import {
+const {
   getProjects,
   getProject,
   createProject,
   updateProject,
   likeProject,
   deleteProject,
-} from '../controllers/projects.js';
+} = require('../controllers/projects.js');
 
 const router = express.Router();
 
 router.get('/', getProjects);
 router.post('/', createProject);
-router.get('/:id', getPost);
+router.get('/:id', getProject);
 router.patch('/:id', updateProject);
 router.delete('/:id', deleteProject);
 router.patch('/:id/likeProject', likeProject);
-router.post('/newsletter', newsletter);
 
-export default router;
+module.exports = router;
