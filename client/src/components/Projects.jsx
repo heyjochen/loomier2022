@@ -1,20 +1,7 @@
-import { Link, Route, Routes } from 'react-router-dom';
-import { Fragment, useState } from 'react';
-import { Dialog, Menu, Transition } from '@headlessui/react';
-import {
-  ClockIcon,
-  HomeIcon,
-  MenuAlt1Icon,
-  ViewListIcon,
-  UserIcon,
-  XIcon,
-} from '@heroicons/react/outline';
-import {
-  ChevronRightIcon,
-  DotsVerticalIcon,
-  SearchIcon,
-  SelectorIcon,
-} from '@heroicons/react/solid';
+import { Fragment } from 'react';
+import { Menu, Transition } from '@headlessui/react';
+
+import { ChevronRightIcon, DotsVerticalIcon } from '@heroicons/react/solid';
 
 const projects = [
   {
