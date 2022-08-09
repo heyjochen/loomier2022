@@ -13,6 +13,7 @@ import {
 import { ChevronRightIcon, ExternalLinkIcon } from '@heroicons/react/solid';
 
 import { Link, Outlet } from 'react-router-dom';
+import NewsletterSignup from '../components/Newsletter';
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -326,7 +327,7 @@ export function Home() {
                 <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
                   <div className="lg:py-24">
                     <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
-                      <span className="block">A better way to</span>
+                      <span className="block">The easy way to</span>
                       <span className="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 sm:pb-5">
                         track metadata.
                       </span>
@@ -337,40 +338,7 @@ export function Home() {
                       veniam occaecat fugiat.
                     </p>
                     <div className="mt-10 sm:mt-12">
-                      <form
-                        action="#"
-                        className="sm:max-w-xl sm:mx-auto lg:mx-0"
-                      >
-                        <div className="sm:flex">
-                          <div className="min-w-0 flex-1">
-                            <label htmlFor="email" className="sr-only">
-                              Email address
-                            </label>
-                            <input
-                              id="email"
-                              type="email"
-                              placeholder="Enter your email"
-                              className="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
-                            />
-                          </div>
-                          <div className="mt-3 sm:mt-0 sm:ml-3">
-                            <button
-                              type="submit"
-                              className="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
-                            >
-                              Start free trial
-                            </button>
-                          </div>
-                        </div>
-                        <p className="mt-3 text-sm text-gray-300 sm:mt-4">
-                          Start your free 14-day trial, no credit card
-                          necessary. By providing your email, you agree to our{' '}
-                          <a href="#" className="font-medium text-white">
-                            terms of service
-                          </a>
-                          .
-                        </p>
-                      </form>
+                      <NewsletterSignup />
                     </div>
                   </div>
                 </div>
@@ -393,15 +361,14 @@ export function Home() {
             <div className="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
               <div>
                 <h2 className="text-base font-semibold tracking-wider text-cyan-600 uppercase">
-                  Serverless
+                  Notebookless
                 </h2>
                 <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-                  No server? No problem.
+                  No notebook? No problem.
                 </p>
                 <p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-                  Phasellus lorem quam molestie id quisque diam aenean nulla in.
-                  Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend
-                  condimentum id viverra nulla.
+                  Our app makes it extremely easy for you to track metadata for
+                  your film photography.
                 </p>
               </div>
               <div className="mt-12 -mb-10 sm:-mb-24 lg:-mb-80">
@@ -418,15 +385,14 @@ export function Home() {
           <div className="relative bg-white py-16 sm:py-24 lg:py-32">
             <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
               <h2 className="text-base font-semibold tracking-wider text-cyan-600 uppercase">
-                Deploy faster
+                Photograph faster
               </h2>
               <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-                Everything you need to deploy your app
+                Spend more time composing your images
               </p>
               <p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-                Phasellus lorem quam molestie id quisque diam aenean nulla in.
-                Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend
-                condimentum id viverra nulla.
+                Using our app you will spend less time writing down notes while
+                in the field.
               </p>
               <div className="mt-12">
                 <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
