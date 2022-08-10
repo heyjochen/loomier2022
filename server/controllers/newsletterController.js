@@ -1,15 +1,13 @@
 const axios = require('axios');
 
 // @desc Signup for newsletter
-// @route POST /newsletter
+// @route POST /api/newsletter
 // access
 const signup = async (req, res) => {
   const listId = process.env.LIST_ID;
   const apiKey = process.env.MAILCHIMP_API_KEY;
 
-  const body = req.body;
-
-  const { email_address } = body;
+  const { email_address } = req.body;
 
   if (!email_address) {
     return {
@@ -36,8 +34,8 @@ const signup = async (req, res) => {
       statusCode: 200,
       body: JSON.stringify(data),
     };
-  } catch (error) {
-    console.log(error);
+  } catch (e) {
+    console.log(e);
     return {
       statusCode: 500,
       body: JSON.stringify(error),
