@@ -4,7 +4,7 @@ const Project = require('../models/projectSchema');
 // @GET /api/projects
 // access PRIVATE
 const getProjects = async (req, res) => {
-  const projects = await Project.find({});
+  const projects = await Project.find({}).sort({ createdAt: -1 });
   res.status(200).send(projects);
 };
 
