@@ -15,7 +15,7 @@ export default function NewsletterSignup() {
       email_address: email,
     };
 
-    axios.post('http://localhost:8000/api/newsletter', payload);
+    axios.post('/api/newsletter', payload);
     alert('Contact details added successfully.');
     resetForm();
   };
