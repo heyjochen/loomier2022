@@ -4,9 +4,8 @@ import axios from 'axios';
 export function Create() {
   const createProject = async (values, { resetForm }) => {
     console.log(values);
-    const { title, camera, lens, film, notes } = values;
 
-    axios.post('http://localhost:8000/api/projects', values);
+    axios.post('/api/projects', values);
     resetForm();
     console.log('Created project');
   };
