@@ -8,6 +8,7 @@ const projectSchema = mongoose.Schema(
     film: String,
     notes: String,
     creator: String,
+    // 'file-upload': String,
     // createdAt: {
     //   type: Date,
     //   default: new Date(),
