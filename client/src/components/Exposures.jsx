@@ -66,6 +66,15 @@ export function Exposures() {
     allExposures();
   }, []);
 
+  const deleteProject = async (id) => {
+    try {
+      const response = await axios.delete(`/api/projects/${id}`);
+      return response.data;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <>
       {/* Projects list (only on smallest breakpoint) */}
@@ -201,9 +210,10 @@ export function Exposures() {
                       Edit
                     </a>
                   </td>
-                  <td className="px-6 py-3 whitespace-nowrap text-right text-sm font-medium">
+                  <td className="px-6 py-3 whitespace-nowrap text-right text-sm font-medium cursor-pointer">
                     <a
-                      href="#"
+                      type="button"
+                      onClick={() => deleteProject(exposure._id)}
                       className="text-indigo-600 hover:text-indigo-900"
                     >
                       Delete
