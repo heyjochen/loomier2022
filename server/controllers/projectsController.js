@@ -60,7 +60,7 @@ const deleteProject = async (req, res) => {
 
   if (!project) {
     res.status(400);
-    throw new Error('project not found');
+    throw new Error('Project not found');
   }
 
   await project.remove();
