@@ -65,7 +65,12 @@ const loginUser = asyncHandler(async (req, res) => {
 // @POST /api/users
 // access PRIVATE
 const getMe = asyncHandler(async (req, res) => {
-  res.send('register user');
+  const { _id, email } = await User.findById(req.user.id);
+
+  res.status(200).json({
+    id: _id,
+    email,
+  });
 });
 
 const generateToken = (id) => {
